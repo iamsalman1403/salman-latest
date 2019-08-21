@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SlmnPrkr</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="banner">
+        <header>
+            <div class="menu">
+                <a href="#"><i onclick="openMenu()" class="fas fa-bars"></i></a>
+            </div>
+            <!-- <div class="brand">
+                <a href="#">Salman Parkar</a>
+            </div> -->
+        </header>
+        <div class="bannerText" id="headScroll">
+            <div class="bannerTextHead">
+                <h1>Salman Parkar</h1>
+            </div>
+            <p>Web Developer | Social media specialist</p>
+            <p>Know More</p>
+            <a href="#About"><i class="fas fa-arrow-circle-down"></i></a>
+        </div>
+    </div>
+    <nav id="sideNav">
+        <a href="#" id="btnClose" onclick="closeMenu()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#About" onclick="shutMenu()">About</a>
+        <a href="#Services" id="shutMenu">Services</a>
+        <a href="#Contact" id="shutDown">Contact</a>
+    </nav>
+
+    <div class="about" id="About">
+        <div class="aboutText">
+            <div class="aboutHead">
+                <h1>About Me</h1>
+            </div>
+            <div class="boxes">
+                <div class="box" id="aboutMe">
+                    <p class="about-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eius similique illo vel doloremque sed aliquam
+                        necessitatibus perspiciatis deserunt sit magnam porro obcaecati, laboriosam delectus consectetur possimus ad
+                        veritatis eveniet suscipit quis eligendi? Debitis vel voluptates quod maxime, laborum aspernatur accusantium
+                        veritatis fugit consectetur, laboriosam eos labore maiores officiis ipsa distinctio. Dolore necessitatibus rem
+                        accusamus optio doloremque, fuga perferendis hic provident a non. Necessitatibus ea fuga fugit quisquam doloremque
+                        cupiditate expedita odit.
+                    </p>
+                    <br><br><br>
+                    <h2>Salman Parkar</h2>
+                </div>
+                <div class="box" id="aboutImage"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services" id="Services">
+        <div class="servicesText">
+            <div class="servicesHead">
+                <h1>Services</h1>
+            </div>
+            <div class="boxes">
+                <div class="box" id="WebDevelopment">
+                    <h5>Web Development</h5>
+                    <img src="data.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium neque corrupti facilis,
+                        aperiam temporibus voluptatum molestiae?</p>
+                        <button id="Modal">Get a quote!</button>
+                </div>
+                <div class="box" id="DigitalMarketing">
+                    <h5>Digital Marketing</h5>
+                    <img src="statistics.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium neque corrupti facilis,
+                        aperiam temporibus voluptatum molestiae?</p>
+                        <button id="Modal2">Get a quote!</button>
+                </div>
+                <div class="box" id="SocialMediaHandling">
+                    <h5>Social Media Handling</h5>
+                    <img src="social-media.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium neque corrupti facilis,
+                        aperiam temporibus voluptatum molestiae?</p>
+                        <button id="Modal3">Get a quote!</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="contact" id="Contact">
+        <div class="contactText">
+            <div class="contactHead">
+                <h1>Contact</h1>
+            </div>
+            <div class="boxes">
+                <div class="box links">
+                    <a href="#"><img src="facebook.svg" alt=""></a><br>
+                    <a href="#"><img src="instagram.svg" alt=""></a><br>
+                    <a href="#"><img src="linkedin.svg" alt=""></a><br>
+                    <a href="#"><img src="github.svg" alt=""></a><br>
+                </div>
+                <div class="box contactForm">
+                    <h1>Form coming</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Salman Parkar &copy; 2019</p>
+    </footer>
+
+    <div class="quoteForm" id="Quote">
+        <button id="closeBtn" onclick="closeModal()"><span>&times;</span></button>
+        <form name="contact" method="POST" data-netlify="true">
+            <p>
+                <label>Your Name: <input type="text" name="name" /></label>
+            </p>
+            <p>
+                <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+                <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p><span></span></p>
+                <button type="submit">Send</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

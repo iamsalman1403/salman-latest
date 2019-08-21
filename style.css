@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hepta Slab',
+    serif;
+}
+.banner{
+    background: url('img1.jpeg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+header{
+    height: 70px;
+}
+.banner a{
+    list-style: none;
+    color: #ffffff;
+    text-decoration: none;
+}
+.banner .menu{
+    float: left;
+    margin-left: 8px;
+}
+.bannerText {
+    text-align: center;
+    width: 70%;
+    height: 320px;
+    overflow: hidden;
+    margin: auto;
+    color: #ffffff;
+}
+.bannerTextHead{
+    background: #ffffff;
+    color: #FB0284;
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 6px 6px #FB0284;
+}
+.bannerTextHead h1{
+    text-shadow: 2px 2px #000;
+}
+.bannerText p{
+    font-size: 24px;
+    font-weight: 600;
+}
+.bannerText a{
+    color: #FB0284;
+    background: #ffffff;
+    padding: 10px 12px;
+    font-size: 32px;
+    border-radius: 50%;
+}
+/* .banner .brand{
+    text-align: center;
+} */
+#sideNav{
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 0;
+    z-index: 1;
+    background-color:#FB0284;
+    transition: 0.7s;
+    overflow-x: hidden;
+    padding-top: 10px;
+}
+#sideNav a{
+    padding: 10px 10px 10px 30px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    text-shadow: #000;
+}
+/* #btnClose{
+    position: absolute;
+    color: red;
+    right: 24px;
+    margin-left: 48px;
+    top: -8px;
+    font-size: 24px;
+} */
+
+.about{
+    background-color: #20202C;
+    margin: 0;
+    padding: 32px;
+}
+
+.aboutHead h1{
+    margin: 0;
+    padding: 12px;
+    text-align: center;
+    color: #ffffff;
+}
+.aboutText{
+    width: 70%;
+    overflow: hidden;
+    margin: auto;
+    color: #ffffff;
+}
+.about .boxes{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+#aboutMe{
+    width: 70%;
+}
+#aboutImage{
+    background: url('about.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 320px;
+    width: 30%;
+}
+.about h2{
+    text-shadow: 2px 2px #FB0284;
+}
+
+.services {
+    background-color: #FB0284;
+    margin: 0;
+    padding: 32px;
+    position: relative;
+}
+.servicesHead h1 {
+    margin: 0;
+    padding: 12px;
+    text-align: center;
+    color: #ffffff;
+}
+.servicesText {
+    width: 70%;
+    overflow: hidden;
+    margin: auto;
+    color: #ffffff;
+}
+.services .boxes{
+    display: flex;
+    flex-direction: row;
+}
+.services .box{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+.services .box img{
+    width: 96px;
+    height: 96px;
+}
+.services button{
+    background: #ffffff;
+    color: #20202C;
+    padding: 8px 16px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+.contact {
+    background-color: #20202C;
+    margin: 0;
+    padding: 32px;
+}
+.contactHead h1 {
+    margin: 0;
+    padding: 12px;
+    text-align: center;
+    color: #ffffff;
+}
+.contactText {
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+    color: #ffffff;
+}
+.contact img{
+    width: 64px;
+    height: 64px;
+}
+.contact .boxes{
+    display: flex;
+    flex-direction: row;
+}
+.contact .box{
+    margin: auto;
+}
+.contact .links{
+    width: 30%;
+    text-align: left;
+}
+.contact .contactForm{
+    text-align:left;
+    width: 70%;
+}
+footer{
+    background: #FB0284;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+}
+
+#Quote{
+    width: 50%;
+    overflow: hidden;
+    height: 320px;
+    margin: auto;
+    background: #20202C;
+    color: #ffffff;
+    position: absolute;
+    top: 180%;
+    left:25%;
+}
+.quoteForm form{
+    text-align: center;
+}
+.quoteForm #closeBtn{
+    background: #ffffff;
+    color: #20202C;
+    padding: 8px 16px;
+    border: none;
+    font-weight: 600;
+    font-size: 24px;
+    margin-left: 93.15%;
+}
